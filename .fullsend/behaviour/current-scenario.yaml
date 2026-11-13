@@ -1,0 +1,17 @@
+ops:
+    - description: Emit prioritize JSON
+      op: write_fixture
+      args: output/agent-result.json, fixtures/prioritize/rice.json
+      content: |
+        {
+          "reach": 2,
+          "impact": 3,
+          "confidence": 0.5,
+          "effort": 2,
+          "reasoning": {
+            "reach": "Behaviour smoke reach.",
+            "impact": "Behaviour smoke impact.",
+            "confidence": "Behaviour smoke confidence.",
+            "effort": "Behaviour smoke effort."
+          }
+        }
